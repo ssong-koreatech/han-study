@@ -1,0 +1,22 @@
+
+#TODO yml 파일 수정 필요
+spring:
+  profiles:
+    active: "development"
+service:
+  message:
+    type: "simple"
+    text: "hello"
+---
+spring:
+  profiles: "development"
+service:
+  message:
+    text: "hi"
+---
+spring:
+  profiles: "production"
+service:
+  message:
+    type: "advance"
+    text: "welcome"

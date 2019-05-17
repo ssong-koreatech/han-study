@@ -63,7 +63,7 @@ fun describe(obj: Any) : String =
 fun loopFun(){
     val x = 3
     if(x in 1..10) println("fits in range")
-    for(x in 1..5) print(x)
+    for(x2 in 1..5) print(x)
 
     //listOf
     val items = listOf("a", "b", "c")
@@ -82,14 +82,14 @@ fun loopFun(){
 //1_000_000 긴 숫자에 언더바를 붙임
 
 fun test(){
-    var a: Int = 10000
-    var b: Int = 10000
+    val a = 10000
+    val b = 10000
     println("a===b: ${a === b}")    //true
     println("a==b: ${a==b}")        //true
 
-    var c: Int = 10000              //primitive type
+    var c = 10000              //primitive type
     var d: Int? = 10000             //object type
-    println("c===d: ${c === d}")    //false
+    //println("c===d: ${c === d}")    //false
     println("c==d: ${c==d}")        //true
 }
 
@@ -100,6 +100,11 @@ val arr = Array(5, {i -> i.toString()})
 //2.
 val arr2 = arrayOf("1", "2", "3", "4", "5")
 
+
+
+fun main(){
+    println(sum(1,2))
+}
 
 
 
