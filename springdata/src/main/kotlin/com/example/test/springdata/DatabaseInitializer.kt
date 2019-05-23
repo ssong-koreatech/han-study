@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.ReactiveMongoOperations
 import org.springframework.stereotype.Component
 import javax.annotation.PostConstruct
 
-
+/*
 @Component
 class DatabaseInitializer {
 
@@ -42,10 +42,15 @@ class DatabaseInitializer {
      */
 
     //레포지토리가 컬렉션 자체를 처리하기 때문에 위의 코드처럼 컬렉션 코드를 굳이 써주지 않아도됨
+    //데이터베이스에 CRUD 때메 ReactiverCrudRepository를 사용
+    //리액티브적인 방식은 아님
+    /*
     @PostConstruct
     fun initData(){
         customerRepository.saveAll(initialCustomers).subscribe{
             println("Default customers created!")
         }
     }
+     */
 }
+ */
